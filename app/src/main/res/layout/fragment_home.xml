@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment"
+    android:padding="16dp"
+    >
+
+    <ImageView
+        android:id="@+id/homeBanner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <LinearLayout
+        android:id="@+id/llNotice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/homeBanner">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="16dp"
+            android:src="@drawable/notice" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:lineHeight="16dp"
+            android:text="333333333333333333333333333"
+            android:textSize="16sp" />
+
+        <TextView
+            android:lineHeight="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="更多" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvTitle"
+        style="@style/HomeTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="IPFS算力"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/llNotice" />
+
+    <TableLayout
+        android:id="@+id/tlPower"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle"
+        android:layout_marginTop="10dp"
+        android:stretchColumns="*"
+        >
+        <TableRow>
+            <LinearLayout
+                android:orientation="vertical"
+                android:gravity="center"
+               style="@style/HomePowerItem"
+                android:padding="16dp"
+                android:layout_marginRight="6dp"
+                android:layout_marginEnd="6dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="开挖算力"
+                    />
+
+                <TextView
+                    style="@style/HomePowerItemNum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="320T" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:gravity="center"
+                style="@style/HomePowerItem"
+                android:padding="16dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginStart="6dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="开挖算力"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="320T"
+                    style="@style/HomePowerItemNum"
+                    />
+            </LinearLayout>
+        </TableRow>
+        <TableRow android:layout_marginTop="10dp">
+            <LinearLayout
+                android:orientation="vertical"
+                android:gravity="center"
+                style="@style/HomePowerItem"
+
+                android:padding="16dp"
+                android:layout_marginRight="6dp"
+                android:layout_marginEnd="6dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="开挖算力"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="320T"
+                    style="@style/HomePowerItemNum"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:gravity="center"
+                style="@style/HomePowerItem"
+                android:padding="16dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginStart="6dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="开挖算力"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="320T"
+                    style="@style/HomePowerItemNum"
+                    />
+            </LinearLayout>
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:gravity="center_vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tlPower">
+        <ImageView
+            android:layout_width="17dp"
+            android:layout_height="17dp"
+            android:src="@drawable/accelerate"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:textSize="14sp"
+            android:text="算力加速封装"
+            />
+        <ImageView
+            android:layout_width="61dp"
+            android:layout_height="24dp"
+            android:src="@drawable/go_accelerate"
+            />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

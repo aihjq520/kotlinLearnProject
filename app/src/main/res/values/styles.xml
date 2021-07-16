@@ -1,0 +1,42 @@
+<resources>
+
+    <style name="Widget.Theme.KotlinLearn.ActionBar.Fullscreen" parent="Widget.AppCompat.ActionBar">
+        <item name="android:background">@color/black_overlay</item>
+    </style>
+
+    <style name="Widget.Theme.KotlinLearn.ButtonBar.Fullscreen" parent="">
+        <item name="android:background">@color/black_overlay</item>
+        <item name="android:buttonBarStyle">?android:attr/buttonBarStyle</item>
+    </style>
+
+    <style name="commonButton" parent="">
+        <item name="android:width">281dp</item>
+        <item name="android:height">60dp</item>
+        <item name="android:radius">8dp</item>
+        <item name="android:background">#ff4c53c7</item>
+        <item name="backgroundTint">#ff4c53c7</item>
+    </style>
+
+    <style name="MyEditText" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">#E6E6E6</item>
+        <item name="colorControlActivated">#E6E6E6</item>
+    </style>
+
+    <style name="HomeTitle" parent="">
+        <item name="android:textColor">#ff2d2d2d</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="HomePowerItem" parent="">
+        <item name="android:background">#fff5f5f5</item>
+    </style>
+
+    <style name="HomePowerItemNum">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginTop">3dp</item>
+        <item name="color">#2D2D2D</item>
+    </style>
+</resources>
